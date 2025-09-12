@@ -96,12 +96,12 @@ section {
     line-height: 1.8em;
 
     div {
-      max-width: 500px;
+      max-width: 800px;
     }
   }
   .about-img {
     max-width: 40%;
-    max-height: 500px;
+    max-height: 800px;
     height: auto;
     object-fit: cover;
   }
