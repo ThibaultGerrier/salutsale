@@ -188,7 +188,8 @@ footer {
   padding-bottom: 50px;
 
   div {
-    width: clamp(500px, 70vw, 1000px);
+    width: min(70vw, 1000px);
+    padding: 0 15px;
   }
 
   .who {
@@ -208,6 +209,23 @@ footer {
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
+  header {
+    .inner {
+      flex-direction: column;
+      gap: 15px;
+      padding: 15px;
+
+      select {
+        margin-left: 0;
+      }
+    }
+  }
+
+  main section .inner {
+    width: 95vw;
+    min-width: unset;
+  }
+
   .about {
     flex-direction: column;
 
