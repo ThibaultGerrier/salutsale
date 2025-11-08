@@ -1,7 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>salut salé</title>
     <link rel="stylesheet" href="index.css" />
     <link
@@ -12,38 +13,45 @@
   <body>
     <header>
       <div>
-        <span>salut salé</span>
-        <select>
+        <span id="siteTitle">salut salé</span>
+        <select id="langSelect">
           <option>Francais</option>
           <option>Deutsch</option>
           <option>English</option>
         </select>
       </div>
-      <a href="#contact">Contact</a>
+      <a id="contactLink" href="#contact">Contact</a>
     </header>
     <main>
       <section class="title-section">
-        <img class="title-picture" src="title.jpg" />
+        <img class="title-picture" src="media/title.jpg" />
         <div class="title">
-          <div class="maintitle">salut salé</div>
-          <div class="subtitle">NUTRITION - YOGA</div>
+          <div class="maintitle" id="siteTitle">salut salé</div>
+          <div class="subtitle" id="subtitle">NUTRITION - YOGA</div>
         </div>
       </section>
 
-      <section class="about" id="contact">
+      <section class="about">
         <div class="about-text">
-          <h2>À propos de moi</h2>
-          <div>
-            Je m'appelle Hannah, je suis franco-allemande et passionnée par le mouvement, la mer et le bien-être.
-            Après avoir grandi et enseigné le ski en Autriche, je me suis installée dans le Finistère Sud, là où le
-            sel de l'océan fait partie du quotidien. C'est ici qu'est né "salut salé".
-
-            J'accompagne chacun·e à travers des consultations diététiques et cours de Yoga, de préparation physique
-            et de stretching. Surfeurs, kitesurfeurs ou simplement curieux de mieux bouger : mes séances s'adaptent
-            à vos besoin et vos rythmes.
-
-            Trilingue (français, allemand, anglais), j'aime transmettre avec simplicité et authencité ceux qui veulent
-            dans leurs équilibre et leurs plaisir, dans le mouvement comme dans l'assiette.
+          <h2 id="aboutTitle">À propos de moi</h2>
+          <div class="about-description" id="aboutDescription">
+            Je m'appelle Hannah, je suis franco-allemande et passionnée par le
+            mouvement et la nutrition. Après avoir grandi et enseigné le ski en
+            Autriche, je me suis installée dans le Finistère Sud, là où le sel
+            de l'océan fait partie du quotidien. C'est ici qu'est né "salut
+            salé".
+            <br /><br />
+            J'accompagne chacun·e à travers des consultations diététiques et
+            cours de Yoga, de préparation physique et de stretching. Curieux de
+            mieux bouger ou mieux manger ? Mes séances s'adaptent à vos besoins
+            et vos rythmes.
+            <br /><br />
+            J’aime transmettre avec simplicité et authenticité le goût de
+            l’équilibre et du plaisir, dans le mouvement comme dans l’assiette.
+            <br /><br />
+            Langues : français / allemand / anglais
+            <br />
+            Diplômes : Diététicienne / professeure de Yoga / coach sportif
           </div>
           <div>
             <a
@@ -52,58 +60,78 @@
               rel="noopener noreferrer"
             >
               <img
-                src="insta.svg"
+                src="media/insta.svg"
                 alt="Instagram"
                 style="width: 30px; height: 30px; vertical-align: middle"
               />
             </a>
           </div>
         </div>
-        <img class="about-img" src="about.jpg" />
+        <img class="about-img" src="media/about.jpg" />
       </section>
 
       <section>
         <div class="services">
-          <h2>SERVICES</h2>
-          <span>Voici les différents services proposés...</span>
+          <h2 id="servicesTitle">SERVICES</h2>
+          <span id="servicesSubtitle"
+            >Voici les différents services proposés...</span
+          >
         </div>
         <div></div>
         <div class="service-list">
           <div class="service">
-            <img src="service1.jpg" />
-            <span class="service-name">Consultation bilan diététique </span>
-            <span class="cost">65,00 €</span>
-            <span class="service-description">1h</span>
+            <img src="media/yoga1.jpg" />
+            <span class="service-name" id="service1">
+              Consultation bilan diététique (1 heure)<br />à votre domicile ou
+              en ligne
+            </span>
+            <span class="cost" id="service1Cost">65,00 €</span>
           </div>
 
           <div class="service">
-            <img src="service2.jpg" />
-            <span class="service-name">Consultation suivi diététique</span>
-            <span class="cost">35,00 €</span>
-            <span class="service-description">30 minutes</span>
+            <img src="media/yoga2.jpg" />
+            <span class="service-name" id="service2">
+              Consultation suivi diététique (30 minutes)<br />à votre domicile
+              ou en ligne
+            </span>
+            <span class="cost" id="service2Cost">35,00 €</span>
           </div>
 
           <div class="service">
-            <img src="service3.jpg" />
-            <span class="service-name">Cours de Yoga privé</span>
-            <span class="cost">65,00 €</span>
-            <span class="service-description"
-              >50 minutes à domicile ou l'endroit de votre choix</span
+            <img src="media/yoga3.jpg" />
+            <span class="service-name" id="service3">
+              Cours de Yoga privé (1 heure)<br />à votre domicile ou en ligne
+            </span>
+            <span class="cost" id="service3Cost"
+              >65,00 € (+ 10,00 € par personne de plus)</span
             >
           </div>
 
           <div class="service">
-            <img src="service4.jpg" />
-            <span class="service-name">Cours de yoga collectif</span>
-            <span class="cost">15,00 €</span>
-            <span class="service-description">50 minutes</span>
+            <img src="media/yoga4.jpg" />
+            <span class="service-name" id="service4">
+              Cours de Yoga collectif (1 heure)<br />lieux différents ou en
+              ligne
+            </span>
+            <span class="cost" id="service4Cost">15,00 €</span>
           </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div id="contactSection">
+          du lundi au samedi, sur demande Français<br /><br />
+          Deutsch<br />
+          English<br /><br />
+          Des questions ?<br />
+          hannahgerrier@gmail.com<br />
+          07 63 33 36 70<br />
         </div>
       </section>
 
       <iframe
         class="maps"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21412.535455226218!2d-4.238048907563347!3d47.86734990773517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48172dc0f04c8cf7%3A0x40ca5cd36e563e0!2s29120%20Pont-l&#39;Abb%C3%A9!5e0!3m2!1sen!2sfr!4v1757178541799!5m2!1sen!2sfr"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46702.15419471925!2d-4.232252920389788!3d47.86614878731675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48172dc0f04c8cf7%3A0x40ca5cd36e563e0!2s29120%20Pont-l&#39;Abb%C3%A9%2C%20France!5e0!3m2!1sfr!2sat!4v1762604699730!5m2!1sfr!2sat"
         width="100%"
         height="500px"
         style="border: 0"
@@ -113,6 +141,21 @@
       ></iframe>
     </main>
 
-    <footer>salut salé - Hannah Gerrier</footer>
+    <footer>
+      <span class="who" id="who">salut salé - Hannah Gerrier</span>
+
+      <div class="legal">
+        <div class="legal-title" id="legalTitle">Mentions légales</div>
+        <div id="legalContent">
+          Responsable du site<br />
+          Hannah Gerrier<br />
+          9 Rue Marcel Cariou<br />
+          29120 Pont L'Abbé<br />
+          France<br />
+          hannahgerrier@gmail.com<br />
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
