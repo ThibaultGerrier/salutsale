@@ -5,10 +5,24 @@ html {
 }
 
 body {
-  /* margin: 0; */
   background-color: #f2f1f0;
-  padding-left: clamp(0px, (100vw - 800px) / 2, 50px);
-  padding-right: clamp(0px, (100vw - 800px) / 2, 50px);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .inner {
+      width: clamp(700px, 80vw, 1200px);
+    }
+  }
+}
+
+.bg-white {
+  background-color: white;
 }
 
 * {
@@ -25,15 +39,21 @@ a:visited {
 
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px;
+  justify-content: center;
 
-  select {
-    margin-left: 20px;
-    background: white;
-    border: 1px solid black;
-    padding: 10px;
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    width: clamp(500px, 70vw, 1000px);
+    align-items: center;
+    padding: 25px;
+
+    select {
+      margin-left: 20px;
+      background: white;
+      border: 1px solid black;
+      padding: 10px;
+    }
   }
 }
 
@@ -73,14 +93,10 @@ main {
   }
 }
 
-section {
-  /* padding: 30px; */
-}
-
 .about {
   display: flex;
   justify-content: space-between;
-  background-color: white;
+
   .about-text {
     padding: 15px;
     flex: 1;
@@ -154,20 +170,26 @@ section {
 }
 
 .contact-section {
+  width: 100%;
   padding: 30px;
-  background-color: white;
   letter-spacing: 0.05em;
   line-height: 1.9em;
   font-size: 16px;
 }
 
-.maps {
-  /* padding: 0 30px; */
-}
-
 footer {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
   padding-top: 50px;
   padding-bottom: 50px;
+
+  div {
+    width: clamp(500px, 70vw, 1000px);
+  }
 
   .who {
     display: flex;
