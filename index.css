@@ -37,6 +37,10 @@ a:visited {
   color: inherit;
 }
 
+.pre {
+  white-space: pre-line;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -81,14 +85,20 @@ main {
     color: white;
     text-align: center;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 50px;
+
     .maintitle {
-      font-size: 80px;
+      font-family: "Bugaki";
+      font-size: 90px;
       letter-spacing: 0.05em;
     }
 
     .subtitle {
-      font-size: 28px;
-      display: none;
+      font-size: 40px;
     }
   }
 }
@@ -118,6 +128,12 @@ main {
       max-width: 800px;
       font-size: 17px;
       line-height: 1.4em;
+    }
+
+    .insta-img {
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
     }
   }
   .about-img {
@@ -156,17 +172,26 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    text-align: center;
+    font-size: 17px;
 
     img {
       width: auto;
       height: 270px;
       object-fit: cover;
+      padding-bottom: 10px;
     }
 
     .cost {
       color: rgb(142, 140, 139);
     }
   }
+}
+
+.location-notice {
+  font-size: 17px;
+  padding: 30px;
+  margin-top: 20px;
 }
 
 .contact-section {
