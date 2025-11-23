@@ -63,8 +63,7 @@ Abschlüsse: Ernährungsberaterin (Diätologin) / 200h Multistyle Yogalehrerin (
     servicesTitle: "ANGEBOTE",
     servicesSubtitle:
       "Hier finden Sie die verschiedenen angebotenen Angebote …",
-    service1: `Ernährungsberatung - Erstgespräch
-(1 Stunde)
+    service1: `Ernährungsberatung - Erstgespräch (1 Stunde)
 bei Ihnen zu Hause* oder online`,
     service1Cost: "65,00 €",
     service2: `Ernährungsberatung - Folgegespräch
@@ -160,7 +159,7 @@ function setLanguage(lang, updateUrl = true) {
   document.getElementById("contactLink").textContent = t.contact;
   document.getElementById("aboutTitle").textContent = t.aboutTitle;
   document.getElementById("aboutDescription").innerHTML = nl2br(
-    t.aboutDescription
+    t.aboutDescription,
   );
   document.getElementById("servicesTitle").textContent = t.servicesTitle;
   document.getElementById("servicesSubtitle").textContent = t.servicesSubtitle;
