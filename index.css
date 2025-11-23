@@ -37,10 +37,6 @@ a:visited {
   color: inherit;
 }
 
-.pre {
-  white-space: pre-line;
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -266,6 +262,17 @@ footer {
       img {
         width: 100%;
         height: auto;
+      }
+    }
+  }
+
+  .title-section {
+    .title {
+      padding: 10px;
+
+      .maintitle {
+        font-size: 10vw;
+        line-height: 0.9;
       }
     }
   }
