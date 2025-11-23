@@ -88,7 +88,9 @@ main {
     padding: 50px;
 
     .maintitle {
-      font-family: "Bugaki";
+      white-space: nowrap;
+      font-weight: 700;
+      font-family: "Fraunces";
       font-size: 90px;
       letter-spacing: 0.05em;
     }
@@ -274,6 +276,8 @@ footer {
         font-size: 10vw;
         line-height: 0.9;
       }
+
+      .subtitle {
+        font-size: 5vw;
+      }
     }
-  }
-}
