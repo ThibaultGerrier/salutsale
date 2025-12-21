@@ -18,20 +18,22 @@ const translations = {
     `,
     servicesTitle: "SERVICES",
     servicesSubtitle: "Voici les différents services proposés...",
-    service1:
-      "Consultation bilan diététique (1 heure)<br />à votre domicile ou en ligne",
-    service1Cost: "65,00 €",
-    service2:
-      "Consultation suivi diététique (30 minutes)<br />à votre domicile ou en ligne",
-    service2Cost: "35,00 €",
-    service3: "Cours de Yoga privé (1 heure)<br />à votre domicile ou en ligne",
-    service3Cost: "65,00 € (+ 10,00 € par personne de plus)",
-    service4:
-      "Cours de Yoga collectif (1 heure)<br />lieux différents ou en ligne",
-    service4Cost: "15,00 €",
+    service1: `Consultation <b>bilan diététique</b> (1 heure)
+à votre domicile* <span class="cost">75,00 €</span>
+ou en ligne <span class="cost">60,00 €</span>`,
+    service2: `Consultation <b>suivi diététique</b> (30 minutes)
+à votre domicile* <span class="cost">45,00 €</span>
+ou en ligne <span class="cost">30,00 €</span>`,
+    service3: `Cours de Yoga privé (1 heure)
+à votre domicile ou en ligne
+<span class="cost">65,00 € (+ 10,00 € par personne de plus)</span>`,
+    service4: `<i>Bientôt :</i>
+Cours de Yoga collectif (1 heure)
+lieux différents ou en ligne
+<span class="cost">15,00 €</span>`,
     contactSection: `
       Horaires : lundi, mercredi, jeudi et vendredi de 9h à 18h, et le samedi de 9h à 14h.
-      Les rendez-vous se fixent sur demande — n’hésitez pas à me contacter pour convenir d’un créneau.
+      Uniquement sur rendez-vous — N’hésitez pas à me contacter pour toute demande spécifique (intervention en entreprise​, demandes d'ateliers privés et professionnels...).
 
       Français
       Deutsch
@@ -63,21 +65,21 @@ Abschlüsse: Ernährungsberaterin (Diätologin) / 200h Multistyle Yogalehrerin (
     servicesTitle: "ANGEBOTE",
     servicesSubtitle:
       "Hier finden Sie die verschiedenen angebotenen Angebote …",
-    service1: `Ernährungsberatung - Erstgespräch (1 Stunde)
-bei Ihnen zu Hause* oder online`,
-    service1Cost: "65,00 €",
-    service2: `Ernährungsberatung - Folgegespräch
-(30 minutes)
-bei Ihnen zu Hause* oder online`,
-    service2Cost: "35,00 €",
+    service1: `Ernährungsberatung - <b>Erstgespräch</b> (1 Stunde)
+bei Ihnen zu Hause* <span class="cost">75,00 €</span>
+oder online <span class="cost">60,00 €</span>`,
+    service2: `Ernährungsberatung - <b>Folgegespräch</b> (30 minutes)
+bei Ihnen zu Hause* <span class="cost">45,00 €</span>
+oder online <span class="cost">30,00 €</span>`,
     service3: `Private Yogastunde (1 Stunde)
-bei Ihnen zu Hause* oder online`,
-    service3Cost: "65,00 € (+ 10,00 € pro zusätzliche Person)",
-    service4: `Yoga Gruppenkurs (1 Stunde)
-an verschiedenen Orten oder online`,
-    service4Cost: "15,00 €",
+bei Ihnen zu Hause* oder online
+<span class="cost">65,00 € (+ 10,00 € pro zusätzliche Person)</span>`,
+    service4: `<i>Bald :</i>
+Yoga Gruppenkurs (1 Stunde)
+an verschiedenen Orten oder online
+<span class="cost">15,00 €</span>`,
     contactSection: `Verfügbarkeit: Montag, Mittwoch, Donnerstag und Freitag von 9:00 bis 18:00 Uhr, Samstag von 9:00 bis 14:00 Uhr.
-Termine nach Vereinbarung — kontaktieren Sie mich gerne, um einen Termin zu vereinbaren.
+Termine nach Vereinbarung — Sie können mich jederzeit für besondere Anfragen kontaktieren (Firmenanfragen, Anfragen für private und berufliche Workshops …).
 
 Deutsch
 English
@@ -113,20 +115,21 @@ My services are offered in French, German, and English.
 Qualifications: Dietitian / 200h Mutlistyle Yoga Teacher (Hatha, Vinyasa, Ashtanga) / Health & Fitness Coach`,
     servicesTitle: "SERVICES",
     servicesSubtitle: "Here are the different services offered...",
-    service1: `Dietetic consultation (1 hour)
-at your home* or online`,
-    service1Cost: "65.00 €",
-    service2: `Dietetic Follow-Up (30 minutes)
-at your home* or online`,
-    service2Cost: "35.00 €",
+    service1: `Dietetic <b>consultation</b> (1 hour)
+at your home* <span class="cost">75.00 €</span>
+or online <span class="cost">60.00 €</span>`,
+    service2: `Dietetic <b>Follow-Up</b> (30 minutes)
+at your home* <span class="cost">45.00 €</span>
+or online <span class="cost">30.00 €</span>`,
     service3: `Private Yoga Class (1 hour)
-at your home* or online`,
-    service3Cost: "65.00 € (+ 10.00 € per additional participant)",
-    service4: `Group Yoga Class (1 hour)
-at different locations or online`,
-    service4Cost: "15.00 €",
+at your home* or online
+<span class="cost">65.00 € (+ 10.00 € per additional participant)</span>`,
+    service4: `<i>Soon :</i>
+Group Yoga Class (1 hour)
+at different locations or online
+<span class="cost">15.00 €</span>`,
     contactSection: `Availability: Monday, Wednesday, Thursday, and Friday from 9 a.m. to 6 p.m., and Saturday from 9 a.m. to 2 p.m.
-Appointments are by request — feel free to contact me to arrange a time.
+By appointment only — Feel free to contact me for any specific request (corporate interventions, private and professional workshop inquiries, etc.).
 
 English
 Français
@@ -159,18 +162,14 @@ function setLanguage(lang, updateUrl = true) {
   document.getElementById("contactLink").textContent = t.contact;
   document.getElementById("aboutTitle").textContent = t.aboutTitle;
   document.getElementById("aboutDescription").innerHTML = nl2br(
-    t.aboutDescription,
+    t.aboutDescription
   );
   document.getElementById("servicesTitle").textContent = t.servicesTitle;
   document.getElementById("servicesSubtitle").textContent = t.servicesSubtitle;
   document.getElementById("service1").innerHTML = nl2br(t.service1);
-  document.getElementById("service1Cost").textContent = t.service1Cost;
   document.getElementById("service2").innerHTML = nl2br(t.service2);
-  document.getElementById("service2Cost").textContent = t.service2Cost;
   document.getElementById("service3").innerHTML = nl2br(t.service3);
-  document.getElementById("service3Cost").textContent = t.service3Cost;
   document.getElementById("service4").innerHTML = nl2br(t.service4);
-  document.getElementById("service4Cost").textContent = t.service4Cost;
   document.getElementById("contactSection").innerHTML = nl2br(t.contactSection);
   document.getElementById("legalTitle").textContent = t.legalTitle;
   document.getElementById("legalContent").innerHTML = nl2br(t.legalContent);
