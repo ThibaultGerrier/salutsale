@@ -32,7 +32,7 @@ Cours de Yoga collectif (1 heure)
 lieux différents ou en ligne
 <span class="cost">15,00 €</span>`,
     contactSection: `
-      Horaires : lundi, mercredi, jeudi et vendredi de 9h à 18h, et le samedi de 9h à 14h.
+      <b>Horaires :</b> lundi, mercredi, jeudi et vendredi de 9h à 18h, et le samedi de 9h à 14h.
       Uniquement sur rendez-vous — N’hésitez pas à me contacter pour toute demande spécifique (intervention en entreprise​, demandes d'ateliers privés et professionnels...).
 
       Français
@@ -78,7 +78,7 @@ bei Ihnen zu Hause* oder online
 Yoga Gruppenkurs (1 Stunde)
 an verschiedenen Orten oder online
 <span class="cost">15,00 €</span>`,
-    contactSection: `Verfügbarkeit: Montag, Mittwoch, Donnerstag und Freitag von 9:00 bis 18:00 Uhr, Samstag von 9:00 bis 14:00 Uhr.
+    contactSection: `<b>Verfügbarkeit:</b> Montag, Mittwoch, Donnerstag und Freitag von 9:00 bis 18:00 Uhr, Samstag von 9:00 bis 14:00 Uhr.
 Termine nach Vereinbarung — Sie können mich jederzeit für besondere Anfragen kontaktieren (Firmenanfragen, Anfragen für private und berufliche Workshops …).
 
 Deutsch
@@ -128,7 +128,7 @@ at your home* or online
 Group Yoga Class (1 hour)
 at different locations or online
 <span class="cost">15.00 €</span>`,
-    contactSection: `Availability: Monday, Wednesday, Thursday, and Friday from 9 a.m. to 6 p.m., and Saturday from 9 a.m. to 2 p.m.
+    contactSection: `<b>Availability:</b> Monday, Wednesday, Thursday, and Friday from 9 a.m. to 6 p.m., and Saturday from 9 a.m. to 2 p.m.
 By appointment only — Feel free to contact me for any specific request (corporate interventions, private and professional workshop inquiries, etc.).
 
 English
