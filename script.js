@@ -27,13 +27,11 @@ ou en ligne <span class="cost">30,00 €</span>`,
     service3: `Cours de Yoga privé (1 heure)
 à votre domicile ou en ligne
 <span class="cost">65,00 € (+ 10,00 € par personne de plus)</span>`,
-    service4: `<i>Bientôt :</i>
-Cours de Yoga collectif (1 heure)
-lieux différents ou en ligne
+    service4: `Cours de Yoga collectif (1 heure)
+voir ci-dessous
 <span class="cost">15,00 €</span>`,
-    contactSection: `
-      Horaires : lundi, mercredi, jeudi et vendredi de 9h à 18h, et le samedi de 9h à 14h.
-      Uniquement sur rendez-vous — N’hésitez pas à me contacter pour toute demande spécifique (intervention en entreprise​, demandes d'ateliers privés et professionnels...).
+    contactSection: `<b>Consultations diététiques sur rendez-vous</b>— N’hésitez pas à me contacter pour toute demande spécifique (intervention en entreprise​, demandes d'ateliers privés et professionnels...).
+<b>Cours de Yoga sur réservation</b> — N’hésitez pas à me contacter pour réserver votre séance.
 
       Français
       Deutsch
@@ -50,6 +48,15 @@ lieux différents ou en ligne
     who: "salut salé - Hannah Gerrier",
     locationNotice:
       "<b>* Déplacements à domicile :</b> sans frais de déplacement jusqu’à 10 km de Pont-l’Abbé (Place Gambetta), puis 0,50 €/km (aller-retour) au-delà.",
+    bigoudTitle: "Yoga à la Bigoud'House",
+    bigoudPeriod: "JUILLET - AOÛT 2026",
+    bigoudSchedule: `Lundi : 18h30 - 19h30
+Jeudi : 18h30 - 19h30
+Dimanche : 10h - 11h`,
+    bigoudPlace: `Dans le jardin s'il fait beau
+... ou alors dans le salon marocain`,
+    bigoudPrice: "15€ par personne",
+    bigoudLevels: "Pour tous les niveaux",
   },
   de: {
     siteTitle: "salut salé",
@@ -74,12 +81,11 @@ oder online <span class="cost">30,00 €</span>`,
     service3: `Private Yogastunde (1 Stunde)
 bei Ihnen zu Hause* oder online
 <span class="cost">65,00 € (+ 10,00 € pro zusätzliche Person)</span>`,
-    service4: `<i>Bald :</i>
-Yoga Gruppenkurs (1 Stunde)
-an verschiedenen Orten oder online
+    service4: `Yoga Gruppenkurs (1 Stunde)
+siehe unten
 <span class="cost">15,00 €</span>`,
-    contactSection: `Verfügbarkeit: Montag, Mittwoch, Donnerstag und Freitag von 9:00 bis 18:00 Uhr, Samstag von 9:00 bis 14:00 Uhr.
-Termine nach Vereinbarung — Sie können mich jederzeit für besondere Anfragen kontaktieren (Firmenanfragen, Anfragen für private und berufliche Workshops …).
+    contactSection: `<b>Ernährungsberatung</b> : Termine nach Vereinbarung — Sie können mich jederzeit für besondere Anfragen kontaktieren (Firmenanfragen, Anfragen für private und berufliche Workshops …).
+<b>Yogakurse</b> : kontaktieren Sie mich gerne für eine Reservierung.
 
 Deutsch
 English
@@ -95,10 +101,19 @@ Hannah Gerrier
 29120 Pont L'Abbé
 Frankreich
 hannahgerrier@gmail.com`,
-    subtitle: "ERNÄHRUNG - YOGA",
+    subtitle: "YOGA - ERNÄHRUNG",
     who: "salut salé - Hannah Gerrier",
     locationNotice:
       "<b>* Angebote bei Ihnen zu Hause :</b> kostenlos bis 10 km um Pont-l’Abbé (Place Gambetta), darüber hinaus 0,50 €/km (Hin- und Rückfahrt).",
+    bigoudTitle: "Yoga in der Bigoud'House",
+    bigoudPeriod: "JULI - AUGUST 2026",
+    bigoudSchedule: `Montag : 18:30 - 19:30
+Donnerstag : 18:30 - 19:30
+Sonntag : 10:00 - 11:00`,
+    bigoudPlace: `Im Garten bei gutem Wetter
+... oder im Wohnzimmer`,
+    bigoudPrice: "15€ pro Person",
+    bigoudLevels: "Für alle Levels",
   },
   en: {
     siteTitle: "salut salé",
@@ -124,12 +139,11 @@ or online <span class="cost">30.00 €</span>`,
     service3: `Private Yoga Class (1 hour)
 at your home* or online
 <span class="cost">65.00 € (+ 10.00 € per additional participant)</span>`,
-    service4: `<i>Soon :</i>
-Group Yoga Class (1 hour)
-at different locations or online
+    service4: `Group Yoga Class (1 hour)
+see bellow
 <span class="cost">15.00 €</span>`,
-    contactSection: `Availability: Monday, Wednesday, Thursday, and Friday from 9 a.m. to 6 p.m., and Saturday from 9 a.m. to 2 p.m.
-By appointment only — Feel free to contact me for any specific request (corporate interventions, private and professional workshop inquiries, etc.).
+    contactSection: `<b>Dietetic consultations</b> : By appointment only — Feel free to contact me for any specific request (corporate interventions, private and professional workshop inquiries, etc.).
+<b>Yoga classes</b> : feel free to contact me to book your spot.
 
 English
 Français
@@ -149,6 +163,15 @@ hannahgerrier@gmail.com`,
     who: "salut salé - Hannah Gerrier",
     locationNotice:
       "<b>* Home visits :</b> free of charge within 10 km of Pont-l’Abbé (Place Gambetta), then €0.50/km (round trip) beyond.",
+    bigoudTitle: "Yoga at Bigoud'House",
+    bigoudPeriod: "JULY - AUGUST 2026",
+    bigoudSchedule: `Lundi : 18h30 - 19h30
+Jeudi : 18h30 - 19h30
+Dimanche : 10h - 11h`,
+    bigoudPlace: `In the garden with good weather
+... or in the maroccan living room`,
+    bigoudPrice: "15€ per person",
+    bigoudLevels: "For all levels",
   },
 };
 
@@ -162,7 +185,7 @@ function setLanguage(lang, updateUrl = true) {
   document.getElementById("contactLink").textContent = t.contact;
   document.getElementById("aboutTitle").textContent = t.aboutTitle;
   document.getElementById("aboutDescription").innerHTML = nl2br(
-    t.aboutDescription
+    t.aboutDescription,
   );
   document.getElementById("servicesTitle").textContent = t.servicesTitle;
   document.getElementById("servicesSubtitle").textContent = t.servicesSubtitle;
@@ -176,6 +199,12 @@ function setLanguage(lang, updateUrl = true) {
   document.getElementById("subtitle").textContent = t.subtitle;
   document.getElementById("who").textContent = t.who;
   document.getElementById("locationNotice").innerHTML = t.locationNotice;
+  document.getElementById("bigoudTitle").textContent = t.bigoudTitle;
+  document.getElementById("bigoudPeriod").textContent = t.bigoudPeriod;
+  document.getElementById("bigoudSchedule").innerHTML = nl2br(t.bigoudSchedule);
+  document.getElementById("bigoudPlace").innerHTML = nl2br(t.bigoudPlace);
+  document.getElementById("bigoudPrice").textContent = t.bigoudPrice;
+  document.getElementById("bigoudLevels").textContent = t.bigoudLevels;
 
   const select = document.getElementById("langSelect");
   if (lang === "de") select.value = "Deutsch";

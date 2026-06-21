@@ -1,6 +1,7 @@
 html {
-  font-family: "Proxima N W01 Reg", "Proxima Nova", "Helvetica Neue", Helvetica,
-    Arial, sans-serif;
+  font-family:
+    "Proxima N W01 Reg", "Proxima Nova", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -75,9 +76,8 @@ main {
   }
   .title {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 50px;
     color: white;
     text-align: center;
 
@@ -86,7 +86,8 @@ main {
     justify-content: space-between;
     height: 100%;
     padding: 50px;
-    padding-bottom: 30px;
+    padding-top: 130px;
+    padding-bottom: 130px;
 
     .maintitle {
       white-space: nowrap;
@@ -194,6 +195,70 @@ main {
   margin-top: 20px;
 }
 
+.bigoud {
+  position: relative;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.bigoud-logo {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  width: 150px;
+  height: auto;
+}
+
+.bigoud-title {
+  font-size: 56px;
+  font-weight: normal;
+  margin: 0 0 20px;
+}
+
+.bigoud-address {
+  font-size: 18px;
+  margin: 0 0 50px;
+}
+
+.bigoud-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 40px;
+  row-gap: 30px;
+  font-size: 20px;
+}
+
+.bigoud-grid p {
+  margin: 0;
+  line-height: 1.5em;
+}
+
+.bigoud-schedule {
+  line-height: 2.2em;
+}
+
+.bigoud-place {
+  line-height: 1.8em;
+}
+
+.bigoud-bold {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.bigoud-footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.bigoud-footer p {
+  margin: 0;
+}
+
 .contact-section {
   width: 100%;
   padding: 30px;
@@ -211,10 +276,15 @@ footer {
 
   padding-top: 50px;
   padding-bottom: 50px;
+  width: min(70vw, 1000px);
+  margin-left: auto;
+  margin-right: auto;
 
-  div {
-    width: min(70vw, 1000px);
-    padding: 0 15px;
+  .bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .who {
@@ -284,5 +354,24 @@ footer {
         font-size: 5vw;
       }
     }
+  }
+
+  .bigoud-logo {
+    position: static;
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  .bigoud-grid,
+  .bigoud-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .bigoud-footer {
+    row-gap: 10px;
+  }
+
+  .bigoud-place {
+    text-align: center;
   }
 }
