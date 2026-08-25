@@ -144,23 +144,6 @@ main {
   }
 }
 
-.services {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  height: 200px;
-  width: 100%;
-  background-color: white;
-  margin-bottom: 30px;
-
-  h2 {
-    font-size: 28px;
-    font-weight: normal;
-  }
-}
-
 .service-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -195,68 +178,147 @@ main {
   margin-top: 20px;
 }
 
-.bigoud {
-  position: relative;
-  padding: 50px 30px;
+.courses {
+  padding: 40px 30px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
   text-align: center;
+  margin: 0 0 10px;
 }
 
-.bigoud-logo {
-  position: absolute;
-  top: 50px;
-  left: 30px;
-  width: 150px;
-  height: auto;
-}
-
-.bigoud-title {
-  font-size: 56px;
-  font-weight: normal;
-  margin: 0 0 20px;
-}
-
-.bigoud-address {
+.section-subtitle {
   font-size: 18px;
-  margin: 0 0 50px;
-}
-
-.bigoud-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  column-gap: 40px;
-  row-gap: 30px;
-  font-size: 20px;
-}
-
-.bigoud-grid p {
+  text-align: center;
   margin: 0;
-  line-height: 1.5em;
 }
 
-.bigoud-schedule {
-  line-height: 2.2em;
+.accordion {
+  max-width: 800px;
+  margin: 30px auto 0;
+  border-top: 1px solid #d9d7d5;
+
+  details {
+    border-bottom: 1px solid #d9d7d5;
+  }
+
+  summary {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 5px;
+    font-size: 20px;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary::before {
+    content: "+";
+    flex: 0 0 auto;
+    width: 1em;
+    text-align: center;
+    font-size: 26px;
+    line-height: 1;
+  }
+
+  details[open] summary::before {
+    content: "−";
+  }
+
+  .accordion-body {
+    /* left padding lines the text up with the summary title (5px + 26px marker + 15px gap) */
+    padding: 0 5px 25px 46px;
+    font-size: 17px;
+    line-height: 1.5em;
+  }
 }
 
-.bigoud-place {
-  line-height: 1.8em;
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
 }
 
-.bigoud-bold {
-  font-weight: bold;
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid black;
+  background: white;
+  font-size: 15px;
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+
+.btn:hover {
+  background: black;
+  color: white;
+}
+
+.cgv-link {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: underline;
+}
+
+.cgv {
+  width: min(90vw, 800px);
+  padding: 50px 0 70px;
   font-size: 16px;
+  line-height: 1.6em;
+
+  h1 {
+    font-size: 32px;
+    text-align: center;
+    margin: 0 0 10px;
+  }
+
+  .cgv-updated {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(142, 140, 139);
+    margin: 0 0 40px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 35px 0 10px;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin: 20px 0 5px;
+  }
+
+  p {
+    margin: 0 0 12px;
+  }
+
+  a {
+    text-decoration: underline;
+  }
 }
 
-.bigoud-footer {
+.course-info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 40px;
-  text-align: center;
-  margin-top: 30px;
-}
+  row-gap: 30px;
+  padding: 40px 30px;
+  font-size: 17px;
+  line-height: 1.8em;
 
-.bigoud-footer p {
-  margin: 0;
+  h3 {
+    font-size: 22px;
+    margin: 0 0 10px;
+  }
 }
 
 .contact-section {
@@ -265,6 +327,10 @@ main {
   letter-spacing: 0.05em;
   line-height: 1.9em;
   font-size: 16px;
+
+  a {
+    text-decoration: underline;
+  }
 }
 
 footer {
@@ -294,11 +360,16 @@ footer {
   }
 
   .legal {
+    flex: 1;
     font-size: 10px;
 
     .legal-title {
       font-weight: 700;
     }
+  }
+
+  .hosting {
+    text-align: right;
   }
 }
 
@@ -356,22 +427,7 @@ footer {
     }
   }
 
-  .bigoud-logo {
-    position: static;
-    margin: 0 auto 20px;
-    display: block;
-  }
-
-  .bigoud-grid,
-  .bigoud-footer {
+  .course-info {
     grid-template-columns: 1fr;
-  }
-
-  .bigoud-footer {
-    row-gap: 10px;
-  }
-
-  .bigoud-place {
-    text-align: center;
   }
 }

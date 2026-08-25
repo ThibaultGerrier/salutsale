@@ -1,23 +1,21 @@
 // script.js for language switching
+// Every key in a translation object is the id of the element it fills.
 
 const translations = {
   fr: {
     siteTitle: "salut salé",
-    contact: "Contact",
+    contactLink: "Contact",
+    subtitle: "YOGA - NUTRITION",
     aboutTitle: "À propos de moi",
-    aboutDescription: `
-      Je m'appelle Hannah, je suis franco-allemande et passionnée par le mouvement et la nutrition. Après avoir grandi et enseigné le ski en Autriche, je me suis installée dans le Finistère Sud, là où le sel de l'océan fait partie du quotidien. C'est ici qu'est né "salut salé".
+    aboutDescription: `Je m'appelle Hannah, je suis franco-allemande et passionnée par le mouvement et la nutrition. Après avoir grandi et enseigné le ski en Autriche, je me suis installée dans le Finistère Sud, là où le sel de l'océan fait partie du quotidien. C'est ici qu'est né "salut salé".
 
-      J'accompagne chacun·e à travers des consultations diététiques et cours de Yoga, de préparation physique et de stretching. Curieux de mieux bouger ou mieux manger ? Mes séances s'adaptent à vos besoins et votre rythme.
+J'accompagne chacun·e à travers des consultations diététiques et des cours de Yoga, de préparation physique et de stretching. Curieux de mieux bouger ou mieux manger ? Mes séances s'adaptent à vos besoins et votre rythme.
 
-      J’aime transmettre avec simplicité et authenticité le goût de l’équilibre et du plaisir, dans le mouvement comme dans l’assiette.
+J’aime transmettre avec simplicité et authenticité le goût de l’équilibre et du plaisir, dans le mouvement comme dans l’assiette.
 
-      Mes services sont proposés en français, allemand et anglais.
+Mes services sont proposés en français, allemand et anglais.
 
-      Diplômes : BTS Diététique / Formation de professeure de Yoga – 200h multistyle (Hatha, Vinyasa, Ashtanga) / Formation coach santé et fitness
-    `,
-    servicesTitle: "SERVICES",
-    servicesSubtitle: "Voici les différents services proposés...",
+Diplômes : BTS Diététique / Formation Micronutrition et Phytothérapie / Formation de professeure de Yoga – Hatha/Vinyasa / Formation coach santé et fitness`,
     service1: `Consultation <b>bilan diététique</b> (1 heure)
 à votre domicile* <span class="cost">75,00 €</span>
 ou en ligne <span class="cost">60,00 €</span>`,
@@ -25,42 +23,102 @@ ou en ligne <span class="cost">60,00 €</span>`,
 à votre domicile* <span class="cost">45,00 €</span>
 ou en ligne <span class="cost">30,00 €</span>`,
     service3: `Cours de Yoga privé (1 heure)
-à votre domicile ou en ligne
-<span class="cost">65,00 € (+ 10,00 € par personne de plus)</span>`,
+à votre domicile* ou en ligne
+<span class="cost">65,00 € (+ 10,00 € par personne supplémentaire)</span>`,
     service4: `Cours de Yoga collectif (1 heure)
-voir ci-dessous
-<span class="cost">15,00 €</span>`,
-    contactSection: `<b>Consultations diététiques sur rendez-vous</b>— N’hésitez pas à me contacter pour toute demande spécifique (intervention en entreprise​, demandes d'ateliers privés et professionnels...).
-<b>Cours de Yoga sur réservation</b> — N’hésitez pas à me contacter pour réserver votre séance.
-
-      Français
-      Deutsch
-      English
-
-      Des questions ?
-      hannahgerrier@gmail.com
-      07 63 33 36 70
-    `,
-    legalTitle: "Mentions légales",
-    legalContent:
-      "Responsable du site<br />Hannah Gerrier<br />9 Rue Marcel Cariou<br />29120 Pont L'Abbé<br />France<br />hannahgerrier@gmail.com<br />",
-    subtitle: "NUTRITION - YOGA",
-    who: "salut salé - Hannah Gerrier",
+voir ci-dessous`,
     locationNotice:
       "<b>* Déplacements à domicile :</b> sans frais de déplacement jusqu’à 10 km de Pont-l’Abbé (Place Gambetta), puis 0,50 €/km (aller-retour) au-delà.",
-    bigoudTitle: "Yoga à la Bigoud'House",
-    bigoudPeriod: "JUILLET - AOÛT 2026",
-    bigoudSchedule: `Lundi : 18h30 - 19h30
-Jeudi : 18h30 - 19h30
-Dimanche : 10h - 11h`,
-    bigoudPlace: `Dans le jardin s'il fait beau
-... ou alors dans le salon marocain`,
-    bigoudPrice: "15€ par personne",
-    bigoudLevels: "Pour tous les niveaux",
+    planningTitle: "Le planning des cours",
+    planningSubtitle: "de septembre 2026 à juin 2027",
+    planning1Title: "Les cours à Pont-l'Abbé",
+    planning1Content: `Lundi - 12h15 à 13h15 - Hatha Yoga (plus doux)
+Jeudi - 12h15 à 13h15 - Hatha Yoga (plus doux)
+Jeudi - 18h15 à 19h15 - Vinyasa Yoga (plus dynamique)
+Jeudi - 19h30 à 20h30 - Hatha Yoga (plus doux)
+
+Les cours ont lieu dans le Studio 15, 15 Route de Loctudy`,
+    planning1Book: "Réserver un cours",
+    planning1Card: "Acheter une carte",
+    planning2Title: "Les cours à Bénodet",
+    planning2Content: `Mercredi - 18h15 à 19h15 - Vinyasa Yoga (plus dynamique)
+Mercredi - 19h30 à 20h30 - Hatha Yoga (plus doux)
+
+Les cours ont lieu dans la yourte du Château Les Garennes (réservation sur leur site de réservation)`,
+    planning2Book: "Réserver un cours à Bénodet",
+    planning3Title: "Les cours à Fouesnant",
+    planning3Content: `Lundi - 18h10 à 19h25 - Yin Yoga
+Lundi - 19h30 à 20h30 - Hatha Flow
+
+Les cours ont lieu dans le complexe sportif Bréhoulou, salle 9`,
+    planning3Book: "Réserver un cours",
+    planning3Card: "Acheter une carte",
+    typesTitle: "Les types de cours",
+    types1Title: "Hatha Yoga (plus doux)",
+    types1Content: `Une pratique équilibrée qui mélange la tenue de postures longues et des enchaînements fluides.
+
+Les postures sont explorées avec attention, tout en laissant une place au mouvement pour créer une séance vivante.
+
+Un cours pour renforcer le corps en douceur, améliorer sa mobilité et sa coordination, tout en cultivant concentration et présence.
+
+Accessible à tous les niveaux, chacun est invité à adapter la pratique à son propre corps.`,
+    types2Title: "Vinyasa Yoga (plus dynamique)",
+    types2Content: `Une pratique rythmée et énergisante, dans laquelle les postures s'enchaînent de manière fluide au rythme de la respiration.
+
+La séance associe mouvements, postures et transitions pour mettre progressivement le corps en action. On travaille la force, la mobilité, l'équilibre et la coordination, tout en développant une respiration consciente.
+
+Une pratique idéale pour se dépenser, renforcer son corps et repartir avec une sensation d'énergie.
+
+Accessible aux personnes ayant déjà pratiqué le yoga, comme aux pratiquants plus expérimentés.`,
+    types3Title: "Yin Yoga",
+    types3Content: `Une pratique douce, lente et profondément relaxante qui invite à ralentir.
+
+Les postures sont pratiquées au sol et maintenues plusieurs minutes, souvent à l'aide de supports (blocs, coussins, sangles…). Cette immobilité permet au corps de relâcher progressivement les tensions et d'explorer en douceur les tissus plus profonds, notamment les fascias, les articulations et les tissus conjonctifs.
+
+La respiration devient un véritable fil conducteur et laisse progressivement place à un état de calme et de lâcher-prise.
+
+Une pratique pour gagner en flexibilité et en mobilité, apaiser le mental et offrir au corps un véritable temps de repos.
+
+Accessible à tous : chaque posture peut être adaptée aux besoins et ressentis de chacun.`,
+    infosTitle: "Informations pratiques",
+    infosContent: `<b>Matériel :</b> Tapis disponibles sur place à Pont-l'Abbé et au Château Les Garennes. Apportez votre tapis personnel et une couverture si vous le souhaitez.
+<b>Tenue :</b> Confortable et permettant de bouger librement.
+<b>Arrivée :</b> Quelques minutes avant le début du cours.
+<b>Parking :</b> Chaque lieu de cours dispose de places de parking.`,
+    tarifsTitle: "Les tarifs",
+    tarifsContent: `Cours à l'unité : 15 €
+Carte 5 cours : 70 €
+Carte 10 cours : 135 €
+Carte 20 cours : 250 €`,
+    cgvLink: "Conditions générales de vente",
+    contactSection: `<b>Consultations diététiques sur rendez-vous</b>— N’hésitez pas à me contacter pour toute demande spécifique (intervention en entreprise​, demandes d'ateliers privés et professionnels...).
+<b>Cours de Yoga sur réservation</b> — Réservez votre séance sur <a href="https://salutsale.as.me/" target="_blank" rel="noopener noreferrer">Acuityscheduling</a>. Envie d'une séance privée ? Contactez-moi !
+
+Français
+Deutsch
+English
+
+Des questions ?
+hannahgerrier@gmail.com
+07 63 33 36 70`,
+    legalTitle: "Mentions légales",
+    legalContent: `Responsable du site
+Hannah Gerrier
+29120 Pont L'Abbé
+France
+SIRET : 90927281700034
+hannahgerrier@gmail.com`,
+    hostingTitle: "Hébergement",
+    hostingContent: `GitHub Inc.
+88 Colin P Kelly Jr Street
+San Francisco, CA 94107
+États-Unis`,
+    who: "salut salé - Hannah Gerrier",
   },
   de: {
     siteTitle: "salut salé",
-    contact: "Kontakt",
+    contactLink: "Kontakt",
+    subtitle: "YOGA - ERNÄHRUNG",
     aboutTitle: "Über mich",
     aboutDescription: `Mein Name ist Hannah, ich bin Deutsch-Französin und meine Leidenschaften sind Bewegung und Ernährung. Ich bin in Österreich aufgewachsen und habe dort als Skilehrerin gearbeitet, bevor ich mich im Südwesten der Bretagne (Finistère) niedergelassen habe – dort, wo das Salz des Ozeans zum Alltag gehört. Hier ist „salut salé“ entstanden.
 
@@ -68,24 +126,84 @@ Ich begleite jede*n durch Ernährungsberatungen sowie Yoga-, Fitness- und Stretc
 
 Ich biete meine Angebote auf Französisch, Deutsch und Englisch an.
 
-Abschlüsse: Ernährungsberaterin (Diätologin) / 200h Multistyle Yogalehrerin (Hatha, Vinyasa, Ashtanga) / Gesundheits- und Fitnesscoach`,
-    servicesTitle: "ANGEBOTE",
-    servicesSubtitle:
-      "Hier finden Sie die verschiedenen angebotenen Angebote …",
+Abschlüsse: Ernährungsberaterin (Diätologin) / Ausbildung Mikronährstoffe und Phytotherapie / Yogalehrerin – Hatha/Vinyasa / Gesundheits- und Fitnesscoach`,
     service1: `Ernährungsberatung - <b>Erstgespräch</b> (1 Stunde)
 bei Ihnen zu Hause* <span class="cost">75,00 €</span>
 oder online <span class="cost">60,00 €</span>`,
-    service2: `Ernährungsberatung - <b>Folgegespräch</b> (30 minutes)
+    service2: `Ernährungsberatung - <b>Folgegespräch</b> (30 Minuten)
 bei Ihnen zu Hause* <span class="cost">45,00 €</span>
 oder online <span class="cost">30,00 €</span>`,
     service3: `Private Yogastunde (1 Stunde)
 bei Ihnen zu Hause* oder online
 <span class="cost">65,00 € (+ 10,00 € pro zusätzliche Person)</span>`,
     service4: `Yoga Gruppenkurs (1 Stunde)
-siehe unten
-<span class="cost">15,00 €</span>`,
+siehe unten`,
+    locationNotice:
+      "<b>* Angebote bei Ihnen zu Hause :</b> kostenlos bis 10 km um Pont-l’Abbé (Place Gambetta), darüber hinaus 0,50 €/km (Hin- und Rückfahrt).",
+    planningTitle: "Der Kursplan",
+    planningSubtitle: "von September 2026 bis Juni 2027",
+    planning1Title: "Die Kurse in Pont-l'Abbé",
+    planning1Content: `Montag - 12:15 bis 13:15 - Hatha Yoga (sanfter)
+Donnerstag - 12:15 bis 13:15 - Hatha Yoga (sanfter)
+Donnerstag - 18:15 bis 19:15 - Vinyasa Yoga (dynamischer)
+Donnerstag - 19:30 bis 20:30 - Hatha Yoga (sanfter)
+
+Die Kurse finden im Studio 15, 15 Route de Loctudy statt`,
+    planning1Book: "Kurs reservieren",
+    planning1Card: "Karte kaufen",
+    planning2Title: "Die Kurse in Bénodet",
+    planning2Content: `Mittwoch - 18:15 bis 19:15 - Vinyasa Yoga (dynamischer)
+Mittwoch - 19:30 bis 20:30 - Hatha Yoga (sanfter)
+
+Die Kurse finden in der Jurte des Château Les Garennes statt (Reservierung über deren Buchungsseite)`,
+    planning2Book: "Kurs in Bénodet reservieren",
+    planning3Title: "Die Kurse in Fouesnant",
+    planning3Content: `Montag - 18:10 bis 19:25 - Yin Yoga
+Montag - 19:30 bis 20:30 - Hatha Flow
+
+Die Kurse finden im Sportkomplex Bréhoulou, Raum 9 statt`,
+    planning3Book: "Kurs reservieren",
+    planning3Card: "Karte kaufen",
+    typesTitle: "Die Kursarten",
+    types1Title: "Hatha Yoga (sanfter)",
+    types1Content: `Eine ausgewogene Praxis, die lang gehaltene Haltungen mit fließenden Abfolgen verbindet.
+
+Die Haltungen werden achtsam erkundet, wobei die Bewegung ihren Platz behält – so entsteht eine lebendige Stunde.
+
+Ein Kurs, um den Körper sanft zu kräftigen und Beweglichkeit und Koordination zu verbessern, während Konzentration und Präsenz kultiviert werden.
+
+Für alle Levels geeignet – jede*r ist eingeladen, die Praxis an den eigenen Körper anzupassen.`,
+    types2Title: "Vinyasa Yoga (dynamischer)",
+    types2Content: `Eine rhythmische und energetisierende Praxis, bei der die Haltungen fließend im Rhythmus der Atmung ineinander übergehen.
+
+Die Stunde verbindet Bewegungen, Haltungen und Übergänge, um den Körper nach und nach in Aktion zu bringen. Wir arbeiten an Kraft, Beweglichkeit, Gleichgewicht und Koordination und entwickeln dabei eine bewusste Atmung.
+
+Eine ideale Praxis, um sich auszupowern, den Körper zu stärken und mit neuer Energie nach Hause zu gehen.
+
+Geeignet für alle, die bereits Yoga praktiziert haben, ebenso wie für erfahrene Praktizierende.`,
+    types3Title: "Yin Yoga",
+    types3Content: `Eine sanfte, langsame und tief entspannende Praxis, die zum Entschleunigen einlädt.
+
+Die Haltungen werden am Boden praktiziert und mehrere Minuten gehalten, oft mit Hilfsmitteln (Blöcke, Kissen, Gurte …). Diese Stille erlaubt dem Körper, Spannungen nach und nach loszulassen und sanft die tieferen Gewebe zu erkunden – insbesondere Faszien, Gelenke und Bindegewebe.
+
+Die Atmung wird zum roten Faden und führt nach und nach in einen Zustand von Ruhe und Loslassen.
+
+Eine Praxis, um Flexibilität und Beweglichkeit zu gewinnen, den Geist zu beruhigen und dem Körper eine echte Pause zu gönnen.
+
+Für alle geeignet: jede Haltung kann an die Bedürfnisse und das Empfinden jedes Einzelnen angepasst werden.`,
+    infosTitle: "Praktische Informationen",
+    infosContent: `<b>Material:</b> Matten vor Ort verfügbar in Pont-l'Abbé und im Château Les Garennes. Bringen Sie gerne Ihre eigene Matte und eine Decke mit.
+<b>Kleidung:</b> bequem und bewegungsfreundlich.
+<b>Ankunft:</b> einige Minuten vor Kursbeginn.
+<b>Parken:</b> an jedem Kursort stehen Parkplätze zur Verfügung.`,
+    tarifsTitle: "Die Preise",
+    tarifsContent: `Einzelstunde: 15 €
+5er-Karte: 70 €
+10er-Karte: 135 €
+20er-Karte: 250 €`,
+    cgvLink: "Allgemeine Verkaufsbedingungen (auf Französisch)",
     contactSection: `<b>Ernährungsberatung</b> : Termine nach Vereinbarung — Sie können mich jederzeit für besondere Anfragen kontaktieren (Firmenanfragen, Anfragen für private und berufliche Workshops …).
-<b>Yogakurse</b> : kontaktieren Sie mich gerne für eine Reservierung.
+<b>Yogakurse</b> : Reservieren Sie Ihre Stunde über <a href="https://salutsale.as.me/" target="_blank" rel="noopener noreferrer">Acuityscheduling</a>. Lust auf eine Privatstunde? Kontaktieren Sie mich!
 
 Deutsch
 English
@@ -97,27 +215,21 @@ hannahgerrier@gmail.com
     legalTitle: "Impressum",
     legalContent: `Verantwortlich für die Webseite
 Hannah Gerrier
-9 Rue Marcel Cariou
 29120 Pont L'Abbé
 Frankreich
+SIRET: 90927281700034
 hannahgerrier@gmail.com`,
-    subtitle: "YOGA - ERNÄHRUNG",
+    hostingTitle: "Hosting",
+    hostingContent: `GitHub Inc.
+88 Colin P Kelly Jr Street
+San Francisco, CA 94107
+USA`,
     who: "salut salé - Hannah Gerrier",
-    locationNotice:
-      "<b>* Angebote bei Ihnen zu Hause :</b> kostenlos bis 10 km um Pont-l’Abbé (Place Gambetta), darüber hinaus 0,50 €/km (Hin- und Rückfahrt).",
-    bigoudTitle: "Yoga in der Bigoud'House",
-    bigoudPeriod: "JULI - AUGUST 2026",
-    bigoudSchedule: `Montag : 18:30 - 19:30
-Donnerstag : 18:30 - 19:30
-Sonntag : 10:00 - 11:00`,
-    bigoudPlace: `Im Garten bei gutem Wetter
-... oder im Wohnzimmer`,
-    bigoudPrice: "15€ pro Person",
-    bigoudLevels: "Für alle Levels",
   },
   en: {
     siteTitle: "salut salé",
-    contact: "Contact",
+    contactLink: "Contact",
+    subtitle: "YOGA - NUTRITION",
     aboutTitle: "About me",
     aboutDescription: `My name is Hannah, I am French-German and passionate about movement and nutrition. After growing up and teaching skiing in Austria, I settled in the south-west of Brittany (Finistère), where the salt of the ocean is part of everyday life. This is where "salut salé" was born.
 
@@ -127,9 +239,7 @@ I enjoy sharing with simplicity and authenticity with those who want to find the
 
 My services are offered in French, German, and English.
 
-Qualifications: Dietitian / 200h Mutlistyle Yoga Teacher (Hatha, Vinyasa, Ashtanga) / Health & Fitness Coach`,
-    servicesTitle: "SERVICES",
-    servicesSubtitle: "Here are the different services offered...",
+Qualifications: Dietitian / Micronutrition and Phytotherapy training / Yoga Teacher – Hatha/Vinyasa / Health & Fitness Coach`,
     service1: `Dietetic <b>consultation</b> (1 hour)
 at your home* <span class="cost">75.00 €</span>
 or online <span class="cost">60.00 €</span>`,
@@ -140,10 +250,73 @@ or online <span class="cost">30.00 €</span>`,
 at your home* or online
 <span class="cost">65.00 € (+ 10.00 € per additional participant)</span>`,
     service4: `Group Yoga Class (1 hour)
-see bellow
-<span class="cost">15.00 €</span>`,
+see below`,
+    locationNotice:
+      "<b>* Home visits :</b> free of charge within 10 km of Pont-l’Abbé (Place Gambetta), then €0.50/km (round trip) beyond.",
+    planningTitle: "The class schedule",
+    planningSubtitle: "from September 2026 to June 2027",
+    planning1Title: "Classes in Pont-l'Abbé",
+    planning1Content: `Monday - 12:15 to 13:15 - Hatha Yoga (gentler)
+Thursday - 12:15 to 13:15 - Hatha Yoga (gentler)
+Thursday - 18:15 to 19:15 - Vinyasa Yoga (more dynamic)
+Thursday - 19:30 to 20:30 - Hatha Yoga (gentler)
+
+Classes take place at Studio 15, 15 Route de Loctudy`,
+    planning1Book: "Book a class",
+    planning1Card: "Buy a card",
+    planning2Title: "Classes in Bénodet",
+    planning2Content: `Wednesday - 18:15 to 19:15 - Vinyasa Yoga (more dynamic)
+Wednesday - 19:30 to 20:30 - Hatha Yoga (gentler)
+
+Classes take place in the yurt of the Château Les Garennes (booking via their booking site)`,
+    planning2Book: "Book a class in Bénodet",
+    planning3Title: "Classes in Fouesnant",
+    planning3Content: `Monday - 18:10 to 19:25 - Yin Yoga
+Monday - 19:30 to 20:30 - Hatha Flow
+
+Classes take place at the Bréhoulou sports complex, room 9`,
+    planning3Book: "Book a class",
+    planning3Card: "Buy a card",
+    typesTitle: "The class types",
+    types1Title: "Hatha Yoga (gentler)",
+    types1Content: `A balanced practice that combines longer-held postures with fluid sequences.
+
+The postures are explored with attention, while leaving room for movement to create a lively session.
+
+A class to gently strengthen the body and improve mobility and coordination, while cultivating concentration and presence.
+
+Accessible to all levels – everyone is invited to adapt the practice to their own body.`,
+    types2Title: "Vinyasa Yoga (more dynamic)",
+    types2Content: `A rhythmic and energising practice in which the postures flow into one another with the rhythm of the breath.
+
+The session combines movements, postures and transitions to progressively bring the body into action. We work on strength, mobility, balance and coordination while developing conscious breathing.
+
+An ideal practice to work out, strengthen your body and leave with a feeling of energy.
+
+Accessible to people who have practised yoga before, as well as more experienced practitioners.`,
+    types3Title: "Yin Yoga",
+    types3Content: `A gentle, slow and deeply relaxing practice that invites you to slow down.
+
+The postures are practised on the floor and held for several minutes, often with props (blocks, cushions, straps …). This stillness allows the body to gradually release tension and gently explore the deeper tissues – in particular the fascia, joints and connective tissue.
+
+The breath becomes a true guiding thread, gradually giving way to a state of calm and letting go.
+
+A practice to gain flexibility and mobility, calm the mind and give the body a real moment of rest.
+
+Accessible to everyone: each posture can be adapted to individual needs and sensations.`,
+    infosTitle: "Practical information",
+    infosContent: `<b>Equipment:</b> Mats available on site in Pont-l'Abbé and at the Château Les Garennes. Bring your own mat and a blanket if you like.
+<b>Clothing:</b> Comfortable and allowing free movement.
+<b>Arrival:</b> A few minutes before the class starts.
+<b>Parking:</b> Each course location has parking available.`,
+    tarifsTitle: "Prices",
+    tarifsContent: `Single class: 15 €
+5-class card: 70 €
+10-class card: 135 €
+20-class card: 250 €`,
+    cgvLink: "Terms of sale (in French)",
     contactSection: `<b>Dietetic consultations</b> : By appointment only — Feel free to contact me for any specific request (corporate interventions, private and professional workshop inquiries, etc.).
-<b>Yoga classes</b> : feel free to contact me to book your spot.
+<b>Yoga classes</b> : Book your class on <a href="https://salutsale.as.me/" target="_blank" rel="noopener noreferrer">Acuityscheduling</a>. Interested in a private session? Contact me!
 
 English
 Français
@@ -155,61 +328,38 @@ hannahgerrier@gmail.com
     legalTitle: "Legal notice",
     legalContent: `Website Owner
 Hannah Gerrier
-9 Rue Marcel Cariou
 29120 Pont L'Abbé
 France
+SIRET: 90927281700034
 hannahgerrier@gmail.com`,
-    subtitle: "NUTRITION - YOGA",
+    hostingTitle: "Hosting",
+    hostingContent: `GitHub Inc.
+88 Colin P Kelly Jr Street
+San Francisco, CA 94107
+United States`,
     who: "salut salé - Hannah Gerrier",
-    locationNotice:
-      "<b>* Home visits :</b> free of charge within 10 km of Pont-l’Abbé (Place Gambetta), then €0.50/km (round trip) beyond.",
-    bigoudTitle: "Yoga at Bigoud'House",
-    bigoudPeriod: "JULY - AUGUST 2026",
-    bigoudSchedule: `Lundi : 18h30 - 19h30
-Jeudi : 18h30 - 19h30
-Dimanche : 10h - 11h`,
-    bigoudPlace: `In the garden with good weather
-... or in the maroccan living room`,
-    bigoudPrice: "15€ per person",
-    bigoudLevels: "For all levels",
   },
 };
 
 function setLanguage(lang, updateUrl = true) {
   const t = translations[lang];
-  if (!t) return;
-  // Helper to convert newlines to <br/>
+  if (!t) {
+    return;
+  }
   const nl2br = (str) => str.replace(/\n/g, "<br />");
 
-  document.getElementById("siteTitle").textContent = t.siteTitle;
-  document.getElementById("contactLink").textContent = t.contact;
-  document.getElementById("aboutTitle").textContent = t.aboutTitle;
-  document.getElementById("aboutDescription").innerHTML = nl2br(
-    t.aboutDescription,
-  );
-  document.getElementById("servicesTitle").textContent = t.servicesTitle;
-  document.getElementById("servicesSubtitle").textContent = t.servicesSubtitle;
-  document.getElementById("service1").innerHTML = nl2br(t.service1);
-  document.getElementById("service2").innerHTML = nl2br(t.service2);
-  document.getElementById("service3").innerHTML = nl2br(t.service3);
-  document.getElementById("service4").innerHTML = nl2br(t.service4);
-  document.getElementById("contactSection").innerHTML = nl2br(t.contactSection);
-  document.getElementById("legalTitle").textContent = t.legalTitle;
-  document.getElementById("legalContent").innerHTML = nl2br(t.legalContent);
-  document.getElementById("subtitle").textContent = t.subtitle;
-  document.getElementById("who").textContent = t.who;
-  document.getElementById("locationNotice").innerHTML = t.locationNotice;
-  document.getElementById("bigoudTitle").textContent = t.bigoudTitle;
-  document.getElementById("bigoudPeriod").textContent = t.bigoudPeriod;
-  document.getElementById("bigoudSchedule").innerHTML = nl2br(t.bigoudSchedule);
-  document.getElementById("bigoudPlace").innerHTML = nl2br(t.bigoudPlace);
-  document.getElementById("bigoudPrice").textContent = t.bigoudPrice;
-  document.getElementById("bigoudLevels").textContent = t.bigoudLevels;
+  for (const [id, text] of Object.entries(t)) {
+    document.getElementById(id).innerHTML = nl2br(text);
+  }
 
   const select = document.getElementById("langSelect");
-  if (lang === "de") select.value = "Deutsch";
-  else if (lang === "en") select.value = "English";
-  else select.value = "Francais";
+  if (lang === "de") {
+    select.value = "Deutsch";
+  } else if (lang === "en") {
+    select.value = "English";
+  } else {
+    select.value = "Francais";
+  }
 
   if (updateUrl) {
     const url = new URL(window.location);
@@ -223,8 +373,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   select.addEventListener("change", function () {
     let lang = "fr";
-    if (select.value === "Deutsch") lang = "de";
-    else if (select.value === "English") lang = "en";
+    if (select.value === "Deutsch") {
+      lang = "de";
+    } else if (select.value === "English") {
+      lang = "en";
+    }
     setLanguage(lang);
   });
 
