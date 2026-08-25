@@ -44,8 +44,8 @@ Les cours ont lieu dans le Studio 15, 15 Route de Loctudy`,
     planning2Content: `Mercredi - 18h15 à 19h15 - Vinyasa Yoga (plus dynamique)
 Mercredi - 19h30 à 20h30 - Hatha Yoga (plus doux)
 
-Les cours ont lieu dans la yourte du Château Les Garennes`,
-    planning2Book: "Réserver un cours",
+Les cours ont lieu dans la yourte du Château Les Garennes (réservation sur leur site de réservation)`,
+    planning2Book: "Réserver un cours à Bénodet",
     planning3Title: "Les cours à Fouesnant",
     planning3Content: `Lundi - 18h10 à 19h25 - Yin Yoga
 Lundi - 19h30 à 20h30 - Hatha Flow
@@ -81,10 +81,10 @@ Une pratique pour gagner en flexibilité et en mobilité, apaiser le mental et o
 
 Accessible à tous : chaque posture peut être adaptée aux besoins et ressentis de chacun.`,
     infosTitle: "Informations pratiques",
-    infosContent: `<b>Matériel :</b> tapis disponibles sur place à Pont-l'Abbé et au Château Les Garennes. Apportez votre tapis personnel et une couverture si vous le souhaitez.
-<b>Tenue :</b> confortable et permettant de bouger librement.
-<b>Arrivée :</b> quelques minutes avant le début du cours.
-<b>Parking :</b> chaque lieu de cours dispose de places de parking.`,
+    infosContent: `<b>Matériel :</b> Tapis disponibles sur place à Pont-l'Abbé et au Château Les Garennes. Apportez votre tapis personnel et une couverture si vous le souhaitez.
+<b>Tenue :</b> Confortable et permettant de bouger librement.
+<b>Arrivée :</b> Quelques minutes avant le début du cours.
+<b>Parking :</b> Chaque lieu de cours dispose de places de parking.`,
     tarifsTitle: "Les tarifs",
     tarifsContent: `Cours à l'unité : 15 €
 Carte 5 cours : 70 €
@@ -155,8 +155,8 @@ Die Kurse finden im Studio 15, 15 Route de Loctudy statt`,
     planning2Content: `Mittwoch - 18:15 bis 19:15 - Vinyasa Yoga (dynamischer)
 Mittwoch - 19:30 bis 20:30 - Hatha Yoga (sanfter)
 
-Die Kurse finden in der Jurte des Château Les Garennes statt`,
-    planning2Book: "Kurs reservieren",
+Die Kurse finden in der Jurte des Château Les Garennes statt (Reservierung über deren Buchungsseite)`,
+    planning2Book: "Kurs in Bénodet reservieren",
     planning3Title: "Die Kurse in Fouesnant",
     planning3Content: `Montag - 18:10 bis 19:25 - Yin Yoga
 Montag - 19:30 bis 20:30 - Hatha Flow
@@ -268,8 +268,8 @@ Classes take place at Studio 15, 15 Route de Loctudy`,
     planning2Content: `Wednesday - 18:15 to 19:15 - Vinyasa Yoga (more dynamic)
 Wednesday - 19:30 to 20:30 - Hatha Yoga (gentler)
 
-Classes take place in the yurt of the Château Les Garennes`,
-    planning2Book: "Book a class",
+Classes take place in the yurt of the Château Les Garennes (booking via their booking site)`,
+    planning2Book: "Book a class in Bénodet",
     planning3Title: "Classes in Fouesnant",
     planning3Content: `Monday - 18:10 to 19:25 - Yin Yoga
 Monday - 19:30 to 20:30 - Hatha Flow
@@ -305,10 +305,10 @@ A practice to gain flexibility and mobility, calm the mind and give the body a r
 
 Accessible to everyone: each posture can be adapted to individual needs and sensations.`,
     infosTitle: "Practical information",
-    infosContent: `<b>Equipment:</b> mats available on site in Pont-l'Abbé and at the Château Les Garennes. Bring your own mat and a blanket if you like.
-<b>Clothing:</b> comfortable and allowing free movement.
-<b>Arrival:</b> a few minutes before the class starts.
-<b>Parking:</b> each course location has parking available.`,
+    infosContent: `<b>Equipment:</b> Mats available on site in Pont-l'Abbé and at the Château Les Garennes. Bring your own mat and a blanket if you like.
+<b>Clothing:</b> Comfortable and allowing free movement.
+<b>Arrival:</b> A few minutes before the class starts.
+<b>Parking:</b> Each course location has parking available.`,
     tarifsTitle: "Prices",
     tarifsContent: `Single class: 15 €
 5-class card: 70 €
