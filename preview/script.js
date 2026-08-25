@@ -92,7 +92,7 @@ Carte 10 cours : 135 €
 Carte 20 cours : 250 €`,
     cgvLink: "Conditions générales de vente",
     contactSection: `<b>Consultations diététiques sur rendez-vous</b>— N’hésitez pas à me contacter pour toute demande spécifique (intervention en entreprise​, demandes d'ateliers privés et professionnels...).
-<b>Cours de Yoga sur réservation</b> — Réservez votre séance sur momoyoga. Envie d'une séance privée ? Contactez-moi !
+<b>Cours de Yoga sur réservation</b> — Réservez votre séance sur <a href="https://salutsale.as.me/" target="_blank" rel="noopener noreferrer">Acuityscheduling</a>. Envie d'une séance privée ? Contactez-moi !
 
 Français
 Deutsch
@@ -203,7 +203,7 @@ Für alle geeignet: jede Haltung kann an die Bedürfnisse und das Empfinden jede
 20er-Karte: 250 €`,
     cgvLink: "Allgemeine Verkaufsbedingungen (auf Französisch)",
     contactSection: `<b>Ernährungsberatung</b> : Termine nach Vereinbarung — Sie können mich jederzeit für besondere Anfragen kontaktieren (Firmenanfragen, Anfragen für private und berufliche Workshops …).
-<b>Yogakurse</b> : Reservieren Sie Ihre Stunde über momoyoga. Lust auf eine Privatstunde? Kontaktieren Sie mich!
+<b>Yogakurse</b> : Reservieren Sie Ihre Stunde über <a href="https://salutsale.as.me/" target="_blank" rel="noopener noreferrer">Acuityscheduling</a>. Lust auf eine Privatstunde? Kontaktieren Sie mich!
 
 Deutsch
 English
@@ -316,7 +316,7 @@ Accessible to everyone: each posture can be adapted to individual needs and sens
 20-class card: 250 €`,
     cgvLink: "Terms of sale (in French)",
     contactSection: `<b>Dietetic consultations</b> : By appointment only — Feel free to contact me for any specific request (corporate interventions, private and professional workshop inquiries, etc.).
-<b>Yoga classes</b> : Book your class on momoyoga. Interested in a private session? Contact me!
+<b>Yoga classes</b> : Book your class on <a href="https://salutsale.as.me/" target="_blank" rel="noopener noreferrer">Acuityscheduling</a>. Interested in a private session? Contact me!
 
 English
 Français
