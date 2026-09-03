@@ -34,8 +34,8 @@ voir ci-dessous`,
     planning1Title: "Les cours à Pont-l'Abbé",
     planning1Content: `Lundi - 12h15 à 13h15 - Hatha Yoga (plus doux)
 Jeudi - 12h15 à 13h15 - Hatha Yoga (plus doux)
-Jeudi - 18h15 à 19h15 - Vinyasa Yoga (plus dynamique)
-Jeudi - 19h30 à 20h30 - Hatha Yoga (plus doux)
+Jeudi - 18h15 à 19h15 - Hatha Yoga (plus doux)
+Jeudi - 19h30 à 20h30 - Vinyasa Yoga (plus dynamique)
 
 Les cours ont lieu dans le Studio 15, 15 Route de Loctudy`,
     planning1Book: "Réserver un cours",
@@ -145,8 +145,8 @@ siehe unten`,
     planning1Title: "Die Kurse in Pont-l'Abbé",
     planning1Content: `Montag - 12:15 bis 13:15 - Hatha Yoga (sanfter)
 Donnerstag - 12:15 bis 13:15 - Hatha Yoga (sanfter)
-Donnerstag - 18:15 bis 19:15 - Vinyasa Yoga (dynamischer)
-Donnerstag - 19:30 bis 20:30 - Hatha Yoga (sanfter)
+Donnerstag - 18:15 bis 19:15 - Hatha Yoga (sanfter)
+Donnerstag - 19:30 bis 20:30 - Vinyasa Yoga (dynamischer)
 
 Die Kurse finden im Studio 15, 15 Route de Loctudy statt`,
     planning1Book: "Kurs reservieren",
@@ -258,8 +258,8 @@ see below`,
     planning1Title: "Classes in Pont-l'Abbé",
     planning1Content: `Monday - 12:15 to 13:15 - Hatha Yoga (gentler)
 Thursday - 12:15 to 13:15 - Hatha Yoga (gentler)
-Thursday - 18:15 to 19:15 - Vinyasa Yoga (more dynamic)
-Thursday - 19:30 to 20:30 - Hatha Yoga (gentler)
+Thursday - 18:15 to 19:15 - Hatha Yoga (gentler)
+Thursday - 19:30 to 20:30 - Vinyasa Yoga (more dynamic)
 
 Classes take place at Studio 15, 15 Route de Loctudy`,
     planning1Book: "Book a class",
